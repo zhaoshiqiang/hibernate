@@ -3,21 +3,21 @@ package com.shengsiyuan.model;
 import java.sql.Date;
 
 public class Person {
-	private Integer id;
+	private int id;
 	
 	private String username;
 	
 	private String password;
 	
-	private Integer age;
+	private int age;
 	
 	private Date registerDate;
 
-	public Integer getId() {
+	public int getId() {
 		return id;
 	}
 
-	public void setId(Integer id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 

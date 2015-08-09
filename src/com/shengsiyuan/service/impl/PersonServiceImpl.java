@@ -22,14 +22,14 @@ public class PersonServiceImpl implements PersonService {
 		return personDAO.listAllPersons();
 	}
 
-	public void removePerson(String id) {
+	public void removePerson(int id) {
 		// TODO Auto-generated method stub
 		PersonDAO personDAO=new PersonDAOImpl();
 		
 		personDAO.removePerson(id);
 	}
 
-	public Person getSinglePersonById(String id) {
+	public Person getSinglePersonById(int id) {
 		// TODO Auto-generated method stub
 		PersonDAO personDAO=new PersonDAOImpl();
 		

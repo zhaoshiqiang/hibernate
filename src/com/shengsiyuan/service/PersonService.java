@@ -9,9 +9,9 @@ public interface PersonService {
 	
 	public List<Person> listAllPersons();
 	
-	public void removePerson(String id);
+	public void removePerson(int id);
 	
-	public Person getSinglePersonById(String id);
+	public Person getSinglePersonById(int id);
 	
 	public void updatePerson(Person person);
 }

@@ -64,14 +64,14 @@ public class PersonDAOImpl implements PersonDAO{
 		return list;
 	}
 
-	public void removePerson(String id) {
+	public void removePerson(int id) {
 
 		Session session=HibernateUtil.openSession();
 		Transaction tx=session.beginTransaction();
 		
 		try {
 			
-			Person person=(Person)session.get(Person.class,Integer.parseInt(id));
+			Person person=(Person)session.get(Person.class,id);
 			session.delete(person);
 			tx.commit();
 			
@@ -87,7 +87,7 @@ public class PersonDAOImpl implements PersonDAO{
 		
 	}
 
-	public Person getSinglePersonById(String id) {
+	public Person getSinglePersonById(int id) {
 		
 		Session session=HibernateUtil.openSession();
 		Transaction tx=session.beginTransaction();
@@ -95,7 +95,7 @@ public class PersonDAOImpl implements PersonDAO{
 		Person person = null;
 		
 		try {
-			person=(Person)session.get(Person.class, Integer.parseInt(id));			
+			person=(Person)session.get(Person.class,id);			
 			tx.commit();
 			
 		} catch (Exception e) {

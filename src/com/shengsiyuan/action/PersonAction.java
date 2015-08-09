@@ -14,7 +14,7 @@ import com.shengsiyuan.service.impl.PersonServiceImpl;
 
 public class PersonAction extends ActionSupport{
 	
-	private String id;
+	private int id;
 
 	private String username;
 	
@@ -22,11 +22,11 @@ public class PersonAction extends ActionSupport{
 	
 	private int age;
 
-	public String getId() {
+	public int getId() {
 		return id;
 	}
 
-	public void setId(String id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
